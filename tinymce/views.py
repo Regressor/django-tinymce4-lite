@@ -87,7 +87,7 @@ def css(request):
     :return: Django http response with CSS file for TinyMCE 4
     :rtype: django.http.HttpResponse
     """
-    margin_left = 170  # For Django >= 1.9 style admin
+    margin_left = 0  # For old-style django grapelly
     # For Django >= 2.0 responsive admin
     responsive_admin = VERSION[:2] >= (2, 0)
     return HttpResponse(render_to_string('tinymce/tinymce4.css',
